@@ -18,8 +18,13 @@ public class MenuPage extends SeleniumWrappers{
 	public By shopLink = By.linkText("BOOKS");
 	public By contactsLink = By.linkText("CONTACTS");
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
+	public By searchIcon = By.cssSelector("button[type='submit']");
+	public By searchButton = By.cssSelector("input[class='search_field']");
 	
-/*	public void navigateTo(By locator) {
+	//carti
+	public By theWickedKing = By.cssSelector("a[href='https://keybooks.ro/shop/the-wicked-king/']");
+	
+	/*public void navigateTo(By locator) {
 		driver.findElement(locator).click();
 	}*/
 	

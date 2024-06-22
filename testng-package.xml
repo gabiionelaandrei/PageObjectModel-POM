@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" >
+	
+	<parameter name = "appUrl" value="https://keybooks.ro" />
+	
+    <test name="test" >
+    
+	 <packages>
+	 	<package name = "tests" />
+	 </packages>
+    </test>
+    
+</suite>

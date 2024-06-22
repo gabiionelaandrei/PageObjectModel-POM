@@ -21,6 +21,7 @@ public class LoginPage extends SeleniumWrappers{
 	public By successLoginMsg = By.cssSelector("div[class*='sc_infobox_style_success']");
 	public By errorLoginMsg = By.cssSelector("div[class*='sc_infobox_style_error']");
 	public By logoutBtn = By.linkText("Logout");
+	public By closeLoginBtn = By.xpath("//ul//a[@class='popup_close']");
 	
 	
 	//metode

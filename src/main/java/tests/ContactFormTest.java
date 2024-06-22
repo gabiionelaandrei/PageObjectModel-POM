@@ -16,7 +16,7 @@ public class ContactFormTest extends BaseTest {
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
 	
-	@Test
+	@Test(groups = "UserManagementFunctionality")
 	public void sendMessageTest() {
 		MenuPage menuPage = new MenuPage(driver);
 		menuPage.click(menuPage.loginLink);
@@ -33,7 +33,7 @@ public class ContactFormTest extends BaseTest {
 				"Can I join?");
 		
 		assertEquals(contactPage.getElementText(contactPage.sentMsg), 
-				"Thank you for your message. It has been sent.");
+				"Thank you for your message. It has been sent.x");
 	}
 	
 
